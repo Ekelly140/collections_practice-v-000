@@ -43,15 +43,12 @@ end
   def find_a(array)
     newArray = []
     array.each do |index| 
-     newArray << index if index.start_with?(A)
+     newArray << index if index.start_with?("A")
     end 
     newArray 
   end 
   
-  def start_with?(string)
-    return true if string.match(/\Aa/)
-  end 
-  
+ 
   def sum_array(array)
     array.inject {|sum, num| sum + num}
   end 
