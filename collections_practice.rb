@@ -43,7 +43,7 @@ end
   def find_a(array)
     newArray = []
     array.each do |index| 
-     newArray << index if index.
+     newArray << index if index.start_with?(A)
     end 
     newArray 
   end 
